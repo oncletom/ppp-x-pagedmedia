@@ -1,5 +1,5 @@
 {
-  "name": "bookStyler - le livre pour tous",
+  "name": "typoPourTous",
   "version": "0.0.1",
   "description": "Framework to develop books using html and css using html, grunt and postcss plugins",
   "main": "Gruntfile.js",
