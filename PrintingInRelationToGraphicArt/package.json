@@ -1,0 +1,38 @@
+{
+  "name": "bookStyler - printing with graphic art",
+  "version": "0.0.1",
+  "description": "Framework to develop books using html and css using html, grunt and postcss plugins",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "git+https://github.com/gruntjs/grunt-contrib-copy.git",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-open": "^0.2.3",
+    "grunt-postcss": "^0.9.0",
+    "load-grunt-tasks": "^4.0.0",
+    "pixrem": "^4.0.1",
+    "postcss-center": "^1.1.0",
+    "postcss-color-function": "^4.0.1",
+    "postcss-color-rgba-fallback": "^3.0.0",
+    "postcss-css-variables": "^0.9.0",
+    "postcss-discard-comments": "^4.0.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-import": "^11.1.0",
+    "postcss-merge-rules": "^4.0.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-extend": "^1.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "time-grunt": "^1.4.0"
+  },
+  "scripts": {
+    "start": "npm i && grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "pagedMedia.org",
+  "license": "MIT"
+}

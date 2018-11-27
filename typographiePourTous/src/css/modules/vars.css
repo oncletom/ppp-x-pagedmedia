@@ -1,0 +1,26 @@
+:root {
+
+
+    /* color for the interface */
+    --color-background: rgba(0, 0, 0, 0.2);
+    --color-marginBox: transparent;
+    --color-pageBox: transparent;
+    --color-paper: white;
+
+    /* color used for the baseline */
+    --color-baseline: transparent;
+  
+
+ 
+    /* fonts for the book */
+
+
+
+    /* colors */
+
+
+    /* typographic related variables */
+    --font-size: 12px;
+    --font-lineHeight: 16px;
+    
+}

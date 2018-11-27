@@ -1,0 +1,15 @@
+/* adding a visual helper for the baseline grid */
+
+:root {
+  /* you can change the line-height step for the grid here (as it may not be the same that the lineheight) */
+  --baseline: var(--font-lineHeight);
+}
+
+@media screen {
+  .pagedjs_page {
+    background: linear-gradient( var(--color-paper) 0%, var(--color-paper) 94%, var(--color-baseline) 94%, var(--color-baseline) 100%), var(--color-paper);
+    background-size: 100% var(--baseline);
+    background-repeat: repeat-y;
+    background-position-y: var(--margin-head);
+  }
+}
