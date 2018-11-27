@@ -28,7 +28,7 @@
     "time-grunt": "^2.0.0"
   },
   "scripts": {
-    "start": "npm i && grunt",
+    "start": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
