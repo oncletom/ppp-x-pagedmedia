@@ -6,19 +6,18 @@ You can install and test it like this:
 
 1. Install node.js if you haven't already.
 1. create a folder and open a terminal inside it. Clone the repo there, using `git clone https://gitlab.pagedmedia.org/julientaq/bookstyler.git`
-1. install grunt with `npm install -g grunt-cli`
-1. run `npm install` inside the cloned folder 
-1. run `grunt` in the terminal and browse the `localhost:9000` in chrome or chromium.
+1. run `npm install` inside the cloned folder
+1. run `npm start` in the terminal and browse the `localhost:9000` in chrome or chromium.
 
 
 
-## Prerequisites 
+## Prerequisites
 
 Bookstyler use postcss plugins to handle nested css, import files, some colors functions, etc. If that's too complicated, you can use real css in a simple file, and not worry about postcs.
 
-When you run `grunt`, it will look at the content of your src folder and copy everything in the images, fonts, js, and content folders while processing the css to transform it into a single file.
+When you run `npm start`, it will look at the content of your src folder and copy everything in the images, fonts, js, and content folders while processing the css to transform it into a single file.
 
-That's why you only need to add this link to the html: 
+That's why you only need to add this link to the html:
 `<link href="css/book.css" media="screen" rel="stylesheet" type="text/css">`
 
 
