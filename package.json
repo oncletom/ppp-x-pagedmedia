@@ -6,9 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
-    "copy": "^0.3.2",
     "npm-run-all": "^4.1.5",
-    "onchange": "^5.1.3",
     "pixrem": "^4.0.1",
     "postcss-center": "^1.1.0",
     "postcss-cli": "^6.0.1",
@@ -25,16 +23,11 @@
     "serve": "^10.1.1"
   },
   "scripts": {
-    "build:css": "postcss src/css/book.css -o dist/css/book.css",
-    "copy": "run-p copy:*",
-    "copy:js": "copy 'src/js/**' dist/js",
-    "copy:html": "copy 'src/content/**/*.html' dist/",
-    "copy:img": "copy 'src/images/**' dist/images",
-    "copy:fonts": "copy 'src/fonts/**' dist/fonts",
-    "serve": "serve -p 9000 dist",
-    "watch:copy": "onchange 'src/**/*' -- npm run copy",
-    "watch:css": "npm run build:css -- --watch",
-    "start": "npm-run-all -s copy:* -p serve watch:*",
+    "build:print": "postcss PrintingInRelationToGraphicArt/css/book.css -o PrintingInRelationToGraphicArt/css/book-transformed.css",
+    "build:typo": "postcss typographiePourTous/css/book.css -o typographiePourTous/css/book-transformed.css",
+    "serve": "serve -p ${PORT:=9000} .",
+    "watch:css": "run-p build:* -- --watch",
+    "start": "npm-run-all -p serve watch:*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
